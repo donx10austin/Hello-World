@@ -1,28 +1,33 @@
 import datetime
 
-# --- Number 4: BYU-I Developer Profile Data ---
+# --- Developer Profile Data ---
+# This dictionary stores metadata for the diagnostic report
 developer_info = {
     "Name": "donx10austin",
-    "University": "BYU-Idaho",
-    "Major": "Software Development",
-    "Focus": "SQL, Web Apps, & Data Analysis",
+    "Affiliation": "BYU-Idaho",
+    "Specialization": "Software Development",
+    "Core Focus": "SQL, Web Apps, & Data Analysis",
     "Mission": "Turning complex datasets into actionable insights."
 }
 
 def run_system_check():
+    """
+    Executes a system diagnostic to verify the development environment.
+    """
     print("==========================================")
     print("       SYSTEM BOOT: HELLO WORLD           ")
     print("==========================================")
     
-    # Printing the classic message
+    # Core Output
     print("Message: Hello World!")
-    print(f"Status:  System active on {datetime.datetime.now().strftime('%Y-%m-%d')}")
+    print(f"Status:  Environment active on {datetime.datetime.now().strftime('%Y-%m-%d')}")
     print("-" * 42)
     
-    # Printing the Developer Profile (Number 4)
+    # Iterating through the Developer Profile
     print("DEVELOPER PROFILE:")
     for key, value in developer_info.items():
-        print(f" > {key}: {value}")
+        # Using f-string padding for clean alignment
+        print(f" > {key:15}: {value}")
         
     print("==========================================")
     print("    READY TO BUILD DATA-DRIVEN APPS       ")
