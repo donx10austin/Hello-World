@@ -1,17 +1,32 @@
 import datetime
-import platform
 
-# Your BYU-I Developer Profile
-name = "Tech Lover @ BYU-Idaho"
-language = "Python"
-system = platform.system()
+# --- Number 4: BYU-I Developer Profile Data ---
+developer_info = {
+    "Name": "donx10austin",
+    "University": "BYU-Idaho",
+    "Major": "Software Development",
+    "Focus": "SQL, Web Apps, & Data Analysis",
+    "Mission": "Turning complex datasets into actionable insights."
+}
 
-print("========================================")
-print("             HELLO WORLD!               ")
-print("========================================")
-print(f"Developer: {name}")
-print(f"Language:  {language}")
-print(f"OS:        {system}")
-print(f"Status:    Ready for Data Analysis & SQL")
-print(f"Timestamp: {datetime.datetime.now().strftime('%c')}")
-print("========================================")
+def run_system_check():
+    print("==========================================")
+    print("       SYSTEM BOOT: HELLO WORLD           ")
+    print("==========================================")
+    
+    # Printing the classic message
+    print("Message: Hello World!")
+    print(f"Status:  System active on {datetime.datetime.now().strftime('%Y-%m-%d')}")
+    print("-" * 42)
+    
+    # Printing the Developer Profile (Number 4)
+    print("DEVELOPER PROFILE:")
+    for key, value in developer_info.items():
+        print(f" > {key}: {value}")
+        
+    print("==========================================")
+    print("    READY TO BUILD DATA-DRIVEN APPS       ")
+    print("==========================================")
+
+if __name__ == "__main__":
+    run_system_check()
